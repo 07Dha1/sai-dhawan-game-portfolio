@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a12;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  /* Prevent default scrolling as we will control it */
+  user-select: none;
+  /* Game-like non-selectable text by default */
+}
+
+/* Custom Scrollbar for inner elements */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Utility classes */
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+.box-glow {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+}
